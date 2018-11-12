@@ -78,75 +78,145 @@ public class RequestIptvDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
             super(sType);
         }
         
-        private static final javax.xml.namespace.QName IDSOLICITUD$0 = 
-            new javax.xml.namespace.QName("edu.itq.iptv", "idSolicitud");
+        private static final javax.xml.namespace.QName NUMEROTARJETA$0 = 
+            new javax.xml.namespace.QName("edu.itq.iptv", "numeroTarjeta");
+        private static final javax.xml.namespace.QName MONTO$2 = 
+            new javax.xml.namespace.QName("edu.itq.iptv", "monto");
         
         
         /**
-         * Gets the "idSolicitud" element
+         * Gets the "numeroTarjeta" element
          */
-        public int getIdSolicitud()
+        public java.lang.String getNumeroTarjeta()
         {
             synchronized (monitor())
             {
                 check_orphaned();
                 org.apache.xmlbeans.SimpleValue target = null;
-                target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(IDSOLICITUD$0, 0);
+                target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(NUMEROTARJETA$0, 0);
                 if (target == null)
                 {
-                    return 0;
+                    return null;
                 }
-                return target.getIntValue();
+                return target.getStringValue();
             }
         }
         
         /**
-         * Gets (as xml) the "idSolicitud" element
+         * Gets (as xml) the "numeroTarjeta" element
          */
-        public org.apache.xmlbeans.XmlInt xgetIdSolicitud()
+        public org.apache.xmlbeans.XmlString xgetNumeroTarjeta()
         {
             synchronized (monitor())
             {
                 check_orphaned();
-                org.apache.xmlbeans.XmlInt target = null;
-                target = (org.apache.xmlbeans.XmlInt)get_store().find_element_user(IDSOLICITUD$0, 0);
+                org.apache.xmlbeans.XmlString target = null;
+                target = (org.apache.xmlbeans.XmlString)get_store().find_element_user(NUMEROTARJETA$0, 0);
                 return target;
             }
         }
         
         /**
-         * Sets the "idSolicitud" element
+         * Sets the "numeroTarjeta" element
          */
-        public void setIdSolicitud(int idSolicitud)
+        public void setNumeroTarjeta(java.lang.String numeroTarjeta)
         {
             synchronized (monitor())
             {
                 check_orphaned();
                 org.apache.xmlbeans.SimpleValue target = null;
-                target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(IDSOLICITUD$0, 0);
+                target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(NUMEROTARJETA$0, 0);
                 if (target == null)
                 {
-                    target = (org.apache.xmlbeans.SimpleValue)get_store().add_element_user(IDSOLICITUD$0);
+                    target = (org.apache.xmlbeans.SimpleValue)get_store().add_element_user(NUMEROTARJETA$0);
                 }
-                target.setIntValue(idSolicitud);
+                target.setStringValue(numeroTarjeta);
             }
         }
         
         /**
-         * Sets (as xml) the "idSolicitud" element
+         * Sets (as xml) the "numeroTarjeta" element
          */
-        public void xsetIdSolicitud(org.apache.xmlbeans.XmlInt idSolicitud)
+        public void xsetNumeroTarjeta(org.apache.xmlbeans.XmlString numeroTarjeta)
         {
             synchronized (monitor())
             {
                 check_orphaned();
-                org.apache.xmlbeans.XmlInt target = null;
-                target = (org.apache.xmlbeans.XmlInt)get_store().find_element_user(IDSOLICITUD$0, 0);
+                org.apache.xmlbeans.XmlString target = null;
+                target = (org.apache.xmlbeans.XmlString)get_store().find_element_user(NUMEROTARJETA$0, 0);
                 if (target == null)
                 {
-                    target = (org.apache.xmlbeans.XmlInt)get_store().add_element_user(IDSOLICITUD$0);
+                    target = (org.apache.xmlbeans.XmlString)get_store().add_element_user(NUMEROTARJETA$0);
                 }
-                target.set(idSolicitud);
+                target.set(numeroTarjeta);
+            }
+        }
+        
+        /**
+         * Gets the "monto" element
+         */
+        public double getMonto()
+        {
+            synchronized (monitor())
+            {
+                check_orphaned();
+                org.apache.xmlbeans.SimpleValue target = null;
+                target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(MONTO$2, 0);
+                if (target == null)
+                {
+                    return 0.0;
+                }
+                return target.getDoubleValue();
+            }
+        }
+        
+        /**
+         * Gets (as xml) the "monto" element
+         */
+        public org.apache.xmlbeans.XmlDouble xgetMonto()
+        {
+            synchronized (monitor())
+            {
+                check_orphaned();
+                org.apache.xmlbeans.XmlDouble target = null;
+                target = (org.apache.xmlbeans.XmlDouble)get_store().find_element_user(MONTO$2, 0);
+                return target;
+            }
+        }
+        
+        /**
+         * Sets the "monto" element
+         */
+        public void setMonto(double monto)
+        {
+            synchronized (monitor())
+            {
+                check_orphaned();
+                org.apache.xmlbeans.SimpleValue target = null;
+                target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(MONTO$2, 0);
+                if (target == null)
+                {
+                    target = (org.apache.xmlbeans.SimpleValue)get_store().add_element_user(MONTO$2);
+                }
+                target.setDoubleValue(monto);
+            }
+        }
+        
+        /**
+         * Sets (as xml) the "monto" element
+         */
+        public void xsetMonto(org.apache.xmlbeans.XmlDouble monto)
+        {
+            synchronized (monitor())
+            {
+                check_orphaned();
+                org.apache.xmlbeans.XmlDouble target = null;
+                target = (org.apache.xmlbeans.XmlDouble)get_store().find_element_user(MONTO$2, 0);
+                if (target == null)
+                {
+                    target = (org.apache.xmlbeans.XmlDouble)get_store().add_element_user(MONTO$2);
+                }
+                target.set(monto);
             }
         }
     }

@@ -17,7 +17,7 @@ package iptv.itq.edu;
 public interface ResponseIptvDocument extends org.apache.xmlbeans.XmlObject
 {
     public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(ResponseIptvDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sD40A2FAC98E97F60F62F563F58D4089F").resolveHandle("responseiptv69c6doctype");
+        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(ResponseIptvDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s931049B44BC9785D8A4AF8753BAA9537").resolveHandle("responseiptv69c6doctype");
     
     /**
      * Gets the "responseIptv" element
@@ -42,7 +42,7 @@ public interface ResponseIptvDocument extends org.apache.xmlbeans.XmlObject
     public interface ResponseIptv extends org.apache.xmlbeans.XmlObject
     {
         public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-            org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(ResponseIptv.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sD40A2FAC98E97F60F62F563F58D4089F").resolveHandle("responseiptv472celemtype");
+            org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(ResponseIptv.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s931049B44BC9785D8A4AF8753BAA9537").resolveHandle("responseiptv472celemtype");
         
         /**
          * Gets the "respuesta" element

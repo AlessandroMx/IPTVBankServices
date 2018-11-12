@@ -17,7 +17,7 @@ package iptv.itq.edu;
 public interface RequestIptvDocument extends org.apache.xmlbeans.XmlObject
 {
     public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(RequestIptvDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sD40A2FAC98E97F60F62F563F58D4089F").resolveHandle("requestiptv5d0adoctype");
+        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(RequestIptvDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s931049B44BC9785D8A4AF8753BAA9537").resolveHandle("requestiptv5d0adoctype");
     
     /**
      * Gets the "requestIptv" element
@@ -42,27 +42,47 @@ public interface RequestIptvDocument extends org.apache.xmlbeans.XmlObject
     public interface RequestIptv extends org.apache.xmlbeans.XmlObject
     {
         public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-            org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(RequestIptv.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sD40A2FAC98E97F60F62F563F58D4089F").resolveHandle("requestiptved06elemtype");
+            org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(RequestIptv.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s931049B44BC9785D8A4AF8753BAA9537").resolveHandle("requestiptved06elemtype");
         
         /**
-         * Gets the "idSolicitud" element
+         * Gets the "numeroTarjeta" element
          */
-        int getIdSolicitud();
+        java.lang.String getNumeroTarjeta();
         
         /**
-         * Gets (as xml) the "idSolicitud" element
+         * Gets (as xml) the "numeroTarjeta" element
          */
-        org.apache.xmlbeans.XmlInt xgetIdSolicitud();
+        org.apache.xmlbeans.XmlString xgetNumeroTarjeta();
         
         /**
-         * Sets the "idSolicitud" element
+         * Sets the "numeroTarjeta" element
          */
-        void setIdSolicitud(int idSolicitud);
+        void setNumeroTarjeta(java.lang.String numeroTarjeta);
         
         /**
-         * Sets (as xml) the "idSolicitud" element
+         * Sets (as xml) the "numeroTarjeta" element
          */
-        void xsetIdSolicitud(org.apache.xmlbeans.XmlInt idSolicitud);
+        void xsetNumeroTarjeta(org.apache.xmlbeans.XmlString numeroTarjeta);
+        
+        /**
+         * Gets the "monto" element
+         */
+        double getMonto();
+        
+        /**
+         * Gets (as xml) the "monto" element
+         */
+        org.apache.xmlbeans.XmlDouble xgetMonto();
+        
+        /**
+         * Sets the "monto" element
+         */
+        void setMonto(double monto);
+        
+        /**
+         * Sets (as xml) the "monto" element
+         */
+        void xsetMonto(org.apache.xmlbeans.XmlDouble monto);
         
         /**
          * A factory class with static methods for creating instances

@@ -16,7 +16,7 @@ package org.xmlsoap.schemas.soap.encoding;
 public interface Integer extends org.apache.xmlbeans.XmlInteger
 {
     public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(Integer.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sD40A2FAC98E97F60F62F563F58D4089F").resolveHandle("integer71d2type");
+        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(Integer.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s931049B44BC9785D8A4AF8753BAA9537").resolveHandle("integer71d2type");
     
     /**
      * Gets the "id" attribute

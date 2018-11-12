@@ -3,7 +3,8 @@
     <xs:element name="requestIptv">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="idSolicitud" type="xs:int"/>
+                <xs:element name="numeroTarjeta" type="xs:string"/>
+                <xs:element name="monto" type="xs:double"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
