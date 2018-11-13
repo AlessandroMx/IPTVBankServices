@@ -12,7 +12,7 @@ public class UsuarioDtoRowMapper implements RowMapper {
     @Override
     public Object mapRow(ResultSet rs, int rowNum) throws SQLException {
         UsuariosDto usuario = new UsuariosDto();
-        usuario.setNumero_tarjeta(rs.getString("numero_tarjeta"));
+        usuario.setNumeroTarjeta(rs.getString("numero_tarjeta"));
         usuario.setNombre(rs.getString("nombre"));
         usuario.setApellidoPaterno(rs.getString("apellido_paterno"));
         return usuario;

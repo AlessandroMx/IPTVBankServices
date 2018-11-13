@@ -1,27 +1,29 @@
 package edu.itq.iptv.dto;
 
+import java.math.BigDecimal;
+
 public class UsuariosDto {
 
-    private String numero_tarjeta;
+    private String numeroTarjeta;
     private String nombre;
     private String apellidoPaterno;
     private String apellidoMaterno;
-    private double monto;
+    private BigDecimal monto;
     private String cvv;
     private String fecha;
     
     /**
      * @return the numero_tarjeta
      */
-    public String getNumero_tarjeta() {
-        return numero_tarjeta;
+    public String getNumeroTarjeta() {
+        return numeroTarjeta;
     }
     
     /**
      * @param numero_tarjeta the numero_tarjeta to set
      */
-    public void setNumero_tarjeta(String numero_tarjeta) {
-        this.numero_tarjeta = numero_tarjeta;
+    public void setNumeroTarjeta(String numeroTarjeta) {
+        this.numeroTarjeta = numeroTarjeta;
     }
     
     /**
@@ -69,14 +71,14 @@ public class UsuariosDto {
     /**
      * @return the monto
      */
-    public double getMonto() {
+    public BigDecimal getMonto() {
         return monto;
     }
     
     /**
      * @param monto the monto to set
      */
-    public void setMonto(double monto) {
+    public void setMonto(BigDecimal monto) {
         this.monto = monto;
     }
     

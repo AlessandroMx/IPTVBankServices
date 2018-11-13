@@ -6,6 +6,9 @@
  */
 package edu.itq.iptv;
 
+import java.math.BigDecimal;
+
+import edu.itq.iptv.business.BusinessLogic;
 import edu.itq.iptv.dao.UsuariosDao;
 import edu.itq.iptv.dto.UsuariosDto;
 import iptv.itq.edu.RequestIptvDocument;
@@ -16,35 +19,30 @@ import iptv.itq.edu.ResponseIptvDocument.ResponseIptv;
  * IptvServiceSkeleton java skeleton for the axisService
  */
 public class IptvServiceImpl extends IptvServiceSkeleton {
-    
-    /**
-     * Auto generated method signature
-     *
-     * @param requestIptv
-     * @return responseIptv
-     */
-    
-    private UsuariosDao usuarioDao;
-    
+
+    private BusinessLogic businessLogic;
+
     public ResponseIptvDocument iptvOperation(RequestIptvDocument requestIptv) {
         ResponseIptvDocument doc = ResponseIptvDocument.Factory.newInstance();
-        ResponseIptv resp =  doc.addNewResponseIptv();
-        
-        //UsuariosDto usuarioDto = usuarioDao.findById("9999000099990000");
-        //String resp2 = usuarioDao.msgPrueba();
-        
-        UsuariosDao userDao = new UsuariosDao();
-        String resp2 = userDao.msgPrueba();
-        UsuariosDto userDto = userDao.findById("9999000099990000");
-        
-        resp.setRespuesta(userDto.getNombre());
+        ResponseIptv resp = doc.addNewResponseIptv();
+
+        // Obtain parameters from request...
+        String numeroTarjeta = requestIptv.getRequestIptv().getNumeroTarjeta();
+        BigDecimal monto = new BigDecimal(
+                requestIptv.getRequestIptv().getMonto());
+
+        // Call business logic...
+        String response = businessLogic.chargeService(numeroTarjeta, monto);
+
+        resp.setRespuesta(response);
         return doc;
     }
 
     /**
-     * @param usuarioDao the usuarioDao to set
+     * @param businessLogic the businessLogic to set
      */
-    public void setUsuarioDao(UsuariosDao usuarioDao) {
-        this.usuarioDao = usuarioDao;
+    public void setBusinessLogic(BusinessLogic businessLogic) {
+        this.businessLogic = businessLogic;
     }
+
 }
