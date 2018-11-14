@@ -2,7 +2,7 @@
 <!-- This file was auto-generated from WSDL -->
 <!-- by the Apache Axis2 version: 1.7.8  Built on : May 19, 2018 (07:06:11 BST) -->
 <serviceGroup>
-	<service name="iptvSpringInit" class="edu.itq.iptv.IPtvSpringInit">
+	<service name="iptvBankSpringInit" class="edu.itq.iptv.IPtvSpringInit">
 		<description>Servicio que inicializa el contextoSpring</description>
 		<parameter name="serviceTCCL">composite</parameter>
 		<parameter name="ServiceClass">edu.itq.iptv.IPtvSpringInit</parameter>
@@ -11,7 +11,7 @@
 			<messageReceiver class="org.apache.axis2.receivers.RawXMLINOutMessageReceiver"/>
 		</operation>
 	</service>
-    <service name="iptvService">
+    <service name="iptvBankService">
         <messageReceivers>
             <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="edu.itq.iptv.IptvServiceMessageReceiverInOut"/>
         </messageReceivers>
@@ -22,7 +22,7 @@
         <parameter name="useOriginalwsdl">true</parameter>
         <parameter name="modifyUserWSDLPortAddress">true</parameter>
         <operation name="iptvOperation" mep="http://www.w3.org/ns/wsdl/in-out" namespace="edu.itq.iptv">
-            <actionMapping>http://itq.edu/ContratarIptv</actionMapping>
+            <actionMapping>http://itq.edu/IptvBank</actionMapping>
             <outputActionMapping>edu.itq.iptv/iptvPortType/iptvOperationResponse</outputActionMapping>
         </operation>
     </service>

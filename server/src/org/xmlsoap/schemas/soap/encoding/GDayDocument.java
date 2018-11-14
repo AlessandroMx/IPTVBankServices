@@ -17,7 +17,7 @@ package org.xmlsoap.schemas.soap.encoding;
 public interface GDayDocument extends org.apache.xmlbeans.XmlObject
 {
     public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(GDayDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s931049B44BC9785D8A4AF8753BAA9537").resolveHandle("gday0d8bdoctype");
+        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(GDayDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sE7AB99130FFC865195B55619A4B82A07").resolveHandle("gday0d8bdoctype");
     
     /**
      * Gets the "gDay" element
