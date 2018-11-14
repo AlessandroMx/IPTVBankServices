@@ -1,5 +1,5 @@
 /**
- * IptvServiceMessageReceiverInOut.java
+ * IptvBankServiceMessageReceiverInOut.java
  *
  * This file was auto-generated from WSDL
  * by the Apache Axis2 version: 1.7.8  Built on : May 19, 2018 (07:06:11 BST)
@@ -8,9 +8,9 @@ package edu.itq.iptv;
 
 
 /**
- *  IptvServiceMessageReceiverInOut message receiver
+ *  IptvBankServiceMessageReceiverInOut message receiver
  */
-public class IptvServiceMessageReceiverInOut extends org.apache.axis2.receivers.AbstractInOutMessageReceiver {
+public class IptvBankServiceMessageReceiverInOut extends org.apache.axis2.receivers.AbstractInOutMessageReceiver {
     //
     private final org.apache.xmlbeans.XmlOptions _xmlOptions;
 
@@ -29,7 +29,7 @@ public class IptvServiceMessageReceiverInOut extends org.apache.axis2.receivers.
             // get the implementation class for the Web Service
             Object obj = getTheImplementationObject(msgContext);
 
-            IptvServiceSkeleton skel = (IptvServiceSkeleton) obj;
+            IptvBankServiceSkeleton skel = (IptvBankServiceSkeleton) obj;
 
             //Out Envelop
             org.apache.axiom.soap.SOAPEnvelope envelope = null;

@@ -1,5 +1,5 @@
 /**
- * IptvServiceSkeleton.java
+ * IptvBankServiceSkeleton.java
  *
  * This file was auto-generated from WSDL
  * by the Apache Axis2 version: 1.7.8  Built on : May 19, 2018 (07:06:11 BST)
@@ -7,9 +7,9 @@
 package edu.itq.iptv;
 
 /**
- *  IptvServiceSkeleton java skeleton for the axisService
+ *  IptvBankServiceSkeleton java skeleton for the axisService
  */
-public class IptvServiceSkeleton {
+public class IptvBankServiceSkeleton {
     /**
      * Auto generated method signature
      *

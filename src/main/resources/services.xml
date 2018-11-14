@@ -13,9 +13,9 @@
 	</service>
     <service name="iptvBankService">
         <messageReceivers>
-            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="edu.itq.iptv.IptvServiceMessageReceiverInOut"/>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="edu.itq.iptv.IptvBankServiceMessageReceiverInOut"/>
         </messageReceivers>
-        <parameter name="ServiceClass">edu.itq.iptv.IptvServiceImpl</parameter>
+        <parameter name="ServiceClass">edu.itq.iptv.IptvBankServiceImpl</parameter>
         <parameter name="ServiceObjectSupplier">org.apache.axis2.extensions.spring.receivers.SpringAppContextAwareObjectSupplier</parameter>
         <parameter name="SpringBeanName">iptvImpl</parameter>
         <parameter name="SpringContextLocation">context.xml</parameter>

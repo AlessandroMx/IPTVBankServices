@@ -9,8 +9,6 @@ package edu.itq.iptv;
 import java.math.BigDecimal;
 
 import edu.itq.iptv.business.BusinessLogic;
-import edu.itq.iptv.dao.UsuariosDao;
-import edu.itq.iptv.dto.UsuariosDto;
 import iptv.itq.edu.RequestIptvDocument;
 import iptv.itq.edu.ResponseIptvDocument;
 import iptv.itq.edu.ResponseIptvDocument.ResponseIptv;
@@ -18,7 +16,7 @@ import iptv.itq.edu.ResponseIptvDocument.ResponseIptv;
 /**
  * IptvServiceSkeleton java skeleton for the axisService
  */
-public class IptvServiceImpl extends IptvServiceSkeleton {
+public class IptvServiceImpl extends IptvBankServiceSkeleton {
 
     private BusinessLogic businessLogic;
 
